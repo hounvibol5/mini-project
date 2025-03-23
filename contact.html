@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @theme {
+        --color-primary-1: #253c95;
+  --color-primary-90: #3b50a0;
+  --color-secondary: #f73030;
+  --color-back-ground: #f5f5f5;
+  --color-text-1: #2d2727;
+  --font-hind: "Hind Kochi", sans-serif;
+      }
+    </style>
+   
+  </head>
+  <body class="bg-back-ground text-text-1 font-hind">
+    <header  class="sticky top-0 z-1000 bg-primary-1 shadow-md backdrop-blur-lg border-b border-gray-200 dark:bg-gray-900">
+      <nav class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+          <img src="/image/logo.png" class="h-8" alt="Flow Logo" />
+          <span class="self-center text-white text-2xl font-semibold whitespace-nowrap dark:text-white">Flow</span>
+        </a>
+    
+        <!-- Mobile Menu & Search -->
+        <div class="flex md:order-2">
+          <button type="button" data-collapse-toggle="navbar-search" aria-controls="navbar-search" aria-expanded="false"
+            class="md:hidden text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5">
+            <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+            </svg>
+            <span class="sr-only">Search</span>
+          </button>
+    
+          <div class="relative hidden md:block">
+            <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+              <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none"
+                viewBox="0 0 20 20">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+              </svg>
+            </div>
+            <input type="text" id="search-navbar"
+              class="block w-full p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              placeholder="Search..." />
+          </div>
+    
+          <!-- Mobile Menu Button -->
+          <button data-collapse-toggle="navbar-search" type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-search" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15" />
+            </svg>
+          </button>
+        </div>
+    
+        <!-- Navigation Links -->
+        <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-search">
+          <ul
+            class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-primary-1 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-primary-1 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+            <li>
+              <a href="home.html"
+                class="block py-2 px-3 text-white rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-secondary md:p-0 dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 md:dark:hover:bg-transparent dark:border-gray-700">
+                Home</a>
+            </li>
+            <li>
+              <a href="about.html"
+                class="block py-2 px-3 text-white rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-secondary md:p-0 dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 md:dark:hover:bg-transparent dark:border-gray-700">
+                About</a>
+            </li>
+            <li>
+              <a href="service.html"
+                class="block py-2 px-3 text-white rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-secondary md:p-0 dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 md:dark:hover:bg-transparent dark:border-gray-700">
+                Services</a>
+            </li>
+            <li>
+              <a href="contact.html"
+                class="block py-2 px-3 text-secondary rounded-sm md:bg-transparent md:text-secondary md:p-0 md:dark:text-blue-500"
+                aria-current="page">Contact</a>
+            </li>
+           
+          </ul>
+        </div>
+      </nav>
+    </header>
+    
+    <main class="mx-[130px] py-12 px-6">
+      <div>
+        <h2 class="text-center text-2xl font-bold mb-6 text-primary-1">
+          Contact Information
+        </h2>
+
+        <div class="container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 place-items-center">
+          <div>
+            <h5 class="tracking-wide text-xl font-bold text-text-1">Address</h5>
+            <ul
+              class="list-none mt-6 space-y-2 flex justify-content-center items-center"
+            >
+              <li>
+                <a href="#" class="flex items-center space-x-3 hover:underline">
+                  <div>
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M21 10C21 17 12 23 12 23C12 23 3 17 3 10C3 7.61305 3.94821 5.32387 5.63604 3.63604C7.32387 1.94821 9.61305 1 12 1C14.3869 1 16.6761 1.94821 18.364 3.63604C20.0518 5.32387 21 7.61305 21 10Z"
+                        stroke="#2D2727"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z"
+                        stroke="#2D2727"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+                  <small
+                    >No. 24, Street 271, Sangkat Boeung Kak I, Khan Toul Kork,
+                    Phnom Penh, Cambodia.</small
+                  >
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h5 class="tracking-wide text-xl text-text-1 font-bold">Email</h5>
+            <ul class="list-none mt-6 space-y-2">
+              <li>
+                <a href="#" class="flex items-center space-x-3 hover:underline">
+                  <div>
+                    <svg
+                      width="26"
+                      height="23"
+                      viewBox="0 0 26 23"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M4.23644 4.26984H21.1827C22.3477 4.26984 23.301 5.11269 23.301 6.14285V17.381C23.301 18.4111 22.3477 19.254 21.1827 19.254H4.23644C3.07139 19.254 2.11816 18.4111 2.11816 17.381V6.14285C2.11816 5.11269 3.07139 4.26984 4.23644 4.26984Z"
+                        stroke="#2D2727"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M23.301 6.14285L12.7096 12.6984L2.11816 6.14285"
+                        stroke="#2D2727"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+                  <small>vibolhoun55@gmail.com</small>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h5 class="tracking-wide text-xl text-text-1 font-bold">Phone</h5>
+            <ul class="list-none mt-6 space-y-2">
+              <li>
+                <a
+                  href="#"
+                  class="flex items-center space-x-3 hover:underline text-text-1"
+                >
+                  <div>
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M15.0499 5C16.0267 5.19057 16.9243 5.66826 17.628 6.37194C18.3317 7.07561 18.8094 7.97326 18.9999 8.95L15.0499 5ZM15.0499 1C17.0792 1.22544 18.9715 2.13417 20.4162 3.57701C21.8608 5.01984 22.7719 6.91101 22.9999 8.94L15.0499 1ZM21.9999 16.92V19.92C22.0011 20.1985 21.944 20.4742 21.8324 20.7293C21.7209 20.9845 21.5572 21.2136 21.352 21.4019C21.1468 21.5901 20.9045 21.7335 20.6407 21.8227C20.3769 21.9119 20.0973 21.9451 19.8199 21.92C16.7428 21.5856 13.7869 20.5341 11.1899 18.85C8.77376 17.3147 6.72527 15.2662 5.18993 12.85C3.49991 10.2412 2.44818 7.27099 2.11993 4.18C2.09494 3.90347 2.12781 3.62476 2.21643 3.36162C2.30506 3.09849 2.4475 2.85669 2.6347 2.65162C2.82189 2.44655 3.04974 2.28271 3.30372 2.17052C3.55771 2.05833 3.83227 2.00026 4.10993 2H7.10993C7.59524 1.99522 8.06572 2.16708 8.43369 2.48353C8.80166 2.79999 9.04201 3.23945 9.10993 3.72C9.23656 4.68007 9.47138 5.62273 9.80993 6.53C9.94448 6.88792 9.9736 7.27691 9.89384 7.65088C9.81408 8.02485 9.6288 8.36811 9.35993 8.64L8.08993 9.91C9.51349 12.4135 11.5864 14.4864 14.0899 15.91L15.3599 14.64C15.6318 14.3711 15.9751 14.1858 16.3491 14.1061C16.723 14.0263 17.112 14.0555 17.4699 14.19C18.3772 14.5286 19.3199 14.7634 20.2799 14.89C20.7657 14.9585 21.2093 15.2032 21.5265 15.5775C21.8436 15.9518 22.0121 16.4296 21.9999 16.92Z"
+                        stroke="#2D2727"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+                  <small>+885 89-75-33-84</small>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+     <div class="bg-white">
+      <h2 class="text-center text-2xl font-bold text-primary-1 mt-12">
+        Send Us a Message
+      </h2>
+
+      <form class="mt-6 bg-white shadow-md rounded-lg p-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div>
+            <label class="block font-medium">Fullname</label>
+            <input
+              type="text"
+              class="w-full border border-primary-90 rounded-lg px-3 py-2 mt-1"
+            />
+          </div>
+          <div>
+            <label class="block font-medium">Address</label>
+            <input
+              type="text"
+              class="w-full border border-primary-90 rounded-lg px-3 py-2 mt-1"
+            />
+          </div>
+        </div>
+        <div class="mt-4">
+          <label class="block font-medium">Message</label>
+          <textarea
+            placeholder="Type your message..."
+            class="border p-2 w-full h-32 rounded border-primary-90"
+          ></textarea>
+        </div>
+        <div class="mt-4 flex justify-center">
+          <button
+            class="bg-primary-1 text-white py-2 px-4   sm:w-auto rounded-lg hover:bg-secondary"
+          >
+            Send Message
+          </button>
+        </div>
+      </form>
+    </div>
+    </main>
+    <footer class="bg-primary-1 text-white">
+        <div class="container mx-auto py-14 px-6">
+          <hr class="mt-5 mb-5 border-gray-200 dark:border-gray-700" />
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-5">
+            <div>
+              <img src="/image/logo.png" alt="logo" class="w-[148px] h-[148px]" />
+            </div>
+            <div>
+              <h5 class="tracking-wide text-sm text-white font-semibold">Product</h5>
+              <ul class="list-none mt-6 space-y-2">
+                <li>
+                  <a href="#" class="hover:underline text-white"
+                    ><small>Landing Pages</small></a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="hover:underline text-white"
+                    ><small>Popup Builders</small></a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="hover:underline text-white"
+                    ><small>Web-design</small></a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="hover:underline text-white"
+                    ><small>Content</small></a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="hover:underline text-white"
+                    ><small>Integrations</small></a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h5 class="tracking-wide  text-sm text-white font-semibold">Use Cases</h5>
+              <ul class="list-none mt-6 space-y-2">
+                <li>
+                  <a href="#" class="hover:underline text-white"
+                    ><small>Web-designers</small></a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="hover:underline text-white"
+                    ><small>Marketers</small></a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="hover:underline text-white"
+                    ><small>Small Business</small></a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="hover:underline text-white"
+                    ><small>Website Builder</small></a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h5 class="tracking-wide  text-sm text-white font-semibold">ADDRESS</h5>
+              <ul class="list-none mt-6 space-y-2">
+                <li>
+                  <a
+                    href="#"
+                    class="flex items-center space-x-3 hover:underline text-white"
+                  >
+                    <div>
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M21.5 10C21.5 17 12.5 23 12.5 23C12.5 23 3.5 17 3.5 10C3.5 7.61305 4.44821 5.32387 6.13604 3.63604C7.82387 1.94821 10.1131 1 12.5 1C14.8869 1 17.1761 1.94821 18.864 3.63604C20.5518 5.32387 21.5 7.61305 21.5 10Z"
+                          stroke="white"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M12.5 13C14.1569 13 15.5 11.6569 15.5 10C15.5 8.34315 14.1569 7 12.5 7C10.8431 7 9.5 8.34315 9.5 10C9.5 11.6569 10.8431 13 12.5 13Z"
+                          stroke="white"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+                    <small
+                      >No. 24, Street 271, Sangkat Boeung Kak I, Khan Toul Kork, Phnom Penh, Cambodia./small
+                    >
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h5 class="tracking-wide  text-sm text-white font-semibold">CONTACTS</h5>
+              <ul class="list-none mt-6 space-y-2">
+                <li>
+                  <a
+                    href="#"
+                    class="flex items-center space-x-3 hover:underline text-white"
+                  >
+                    <div>
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z"
+                          stroke="white"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M22 6L12 13L2 6"
+                          stroke="white"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+                    <small>vibolhoun55@gmail.com</small>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="flex items-center space-x-3 hover:underline text-white"
+                  >
+                    <div>
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M15.0501 5C16.0268 5.19057 16.9244 5.66826 17.6281 6.37194C18.3318 7.07561 18.8095 7.97326 19.0001 8.95L15.0501 5ZM15.0501 1C17.0793 1.22544 18.9716 2.13417 20.4163 3.57701C21.8609 5.01984 22.7721 6.91101 23.0001 8.94L15.0501 1ZM22.0001 16.92V19.92C22.0012 20.1985 21.9441 20.4742 21.8326 20.7293C21.721 20.9845 21.5574 21.2136 21.3521 21.4019C21.1469 21.5901 20.9046 21.7335 20.6408 21.8227C20.377 21.9119 20.0974 21.9451 19.8201 21.92C16.7429 21.5856 13.7871 20.5341 11.1901 18.85C8.77388 17.3147 6.72539 15.2662 5.19006 12.85C3.50003 10.2412 2.4483 7.27099 2.12006 4.18C2.09507 3.90347 2.12793 3.62476 2.21656 3.36162C2.30518 3.09849 2.44763 2.85669 2.63482 2.65162C2.82202 2.44655 3.04986 2.28271 3.30385 2.17052C3.55783 2.05833 3.8324 2.00026 4.11006 2H7.11006C7.59536 1.99522 8.06585 2.16708 8.43382 2.48353C8.80179 2.79999 9.04213 3.23945 9.11005 3.72C9.23668 4.68007 9.47151 5.62273 9.81006 6.53C9.9446 6.88792 9.97372 7.27691 9.89396 7.65088C9.81421 8.02485 9.62892 8.36811 9.36005 8.64L8.09006 9.91C9.51361 12.4135 11.5865 14.4864 14.0901 15.91L15.3601 14.64C15.6319 14.3711 15.9752 14.1858 16.3492 14.1061C16.7231 14.0263 17.1121 14.0555 17.4701 14.19C18.3773 14.5286 19.32 14.7634 20.2801 14.89C20.7658 14.9585 21.2095 15.2032 21.5266 15.5775C21.8437 15.9518 22.0122 16.4296 22.0001 16.92Z"
+                          stroke="white"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+                    <small>+885 89-75-33-84</small>
+                  </a>
+                </li>
+              </ul>
+              <div class="flex mt-4">
+                <a href="#" class="hover:text-gray-900 dark:hover:text-white">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 1H9C7.67392 1 6.40215 1.39509 5.46447 2.09835C4.52678 2.80161 4 3.75544 4 4.75V7H1V10H4V16H8V10H11L12 7H8V4.75C8 4.55109 8.10536 4.36032 8.29289 4.21967C8.48043 4.07902 8.73478 4 9 4H12V1Z"
+                      stroke="white"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+  
+                  <span class="sr-only">Facebook page</span>
+                </a>
+                <a
+                  href="#"
+                  class="hover:text-gray-900 dark:hover:text-white ms-5"
+                >
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M10.6667 14.6667V12.0867C10.6917 11.7688 10.6488 11.4492 10.5407 11.1492C10.4327 10.8492 10.262 10.5756 10.04 10.3467C12.1334 10.1133 14.3334 9.32 14.3334 5.68C14.3332 4.74922 13.9752 3.85413 13.3334 3.18C13.6373 2.36567 13.6158 1.46557 13.2734 0.666666C13.2734 0.666666 12.4867 0.433332 10.6667 1.65333C9.13871 1.23921 7.52803 1.23921 6.00004 1.65333C4.18004 0.433332 3.39337 0.666666 3.39337 0.666666C3.05096 1.46557 3.02947 2.36567 3.33337 3.18C2.68679 3.85913 2.32839 4.76231 2.33337 5.7C2.33337 9.31333 4.53337 10.1067 6.62671 10.3667C6.40737 10.5933 6.23822 10.8636 6.13025 11.1599C6.02228 11.4563 5.97791 11.772 6.00004 12.0867V14.6667M6.00004 12.6667C2.66671 13.6667 2.66671 11 1.33337 10.6667L6.00004 12.6667Z"
+                      stroke="white"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+  
+                  <span class="sr-only">GitHub account</span>
+                </a>
+                <a
+                  href="#"
+                  class="hover:text-gray-900 dark:hover:text-white ms-5"
+                >
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M15.3335 1.33337L8.00012 8.66671"
+                      stroke="white"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M15.3335 1.33337L10.6668 14.6667L8.00012 8.66671L2.00012 6.00004L15.3335 1.33337Z"
+                      stroke="white"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+  
+                  <span class="sr-only">Telegram</span>
+                </a>
+                <a
+                  href="#"
+                  class="hover:text-gray-900 dark:hover:text-white ms-5"
+                >
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_149_225)">
+                      <path
+                        d="M15.6665 1.99999C15.0281 2.45031 14.3213 2.79473 13.5732 3.01999C13.1717 2.55833 12.6381 2.23112 12.0446 2.08261C11.451 1.9341 10.8262 1.97145 10.2546 2.18963C9.68299 2.4078 9.19217 2.79626 8.84853 3.30247C8.50489 3.80868 8.32501 4.40821 8.33321 5.01999V5.68666C7.16163 5.71703 6.00073 5.4572 4.95388 4.93029C3.90704 4.40338 3.00676 3.62575 2.33321 2.66666C2.33321 2.66666 -0.333455 8.66666 5.66654 11.3333C4.29356 12.2653 2.65798 12.7326 0.999878 12.6667C6.99988 16 14.3332 12.6667 14.3332 4.99999C14.3326 4.81429 14.3147 4.62905 14.2799 4.44666C14.9603 3.77565 15.4404 2.92847 15.6665 1.99999V1.99999Z"
+                        stroke="white"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_149_225">
+                        <rect
+                          width="16"
+                          height="16"
+                          fill="white"
+                          transform="translate(0.333252)"
+                        />
+                      </clipPath>
+                    </defs>
+                  </svg>
+  
+                  <span class="sr-only">Twitter page</span>
+                </a>
+  
+                <a
+                  href="#"
+                  class="hover:text-gray-900 dark:hover:text-white ms-5"
+                >
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M4.84131 1.51562C3.18884 1.51562 1.84924 2.85522 1.84924 4.50769V11.4918C1.84924 13.1443 3.18884 14.4839 4.84131 14.4839H11.8254C13.4779 14.4839 14.8175 13.1443 14.8175 11.4918V4.50769C14.8175 2.85522 13.4779 1.51562 11.8254 1.51562H4.84131ZM0.849243 4.50769C0.849243 2.30293 2.63655 0.515625 4.84131 0.515625H11.8254C14.0302 0.515625 15.8175 2.30293 15.8175 4.50769V11.4918C15.8175 13.6966 14.0302 15.4839 11.8254 15.4839H4.84131C2.63655 15.4839 0.849243 13.6966 0.849243 11.4918V4.50769ZM8.70003 5.70056C8.22281 5.6298 7.73542 5.71131 7.3072 5.93351C6.87897 6.1557 6.53172 6.50727 6.31482 6.9382C6.09792 7.36913 6.02242 7.85748 6.09907 8.3338C6.17571 8.81011 6.40059 9.25012 6.74173 9.59126C7.08287 9.93239 7.52288 10.1573 7.99919 10.2339C8.4755 10.3106 8.96386 10.2351 9.39479 10.0182C9.82572 9.80127 10.1773 9.45401 10.3995 9.02579C10.6217 8.59757 10.7032 8.11018 10.6324 7.63296C10.5602 7.14618 10.3334 6.69552 9.98544 6.34755C9.63747 5.99958 9.18681 5.77275 8.70003 5.70056ZM6.84663 5.04588C7.46155 4.72681 8.16143 4.60976 8.84671 4.71138C9.54572 4.81503 10.1929 5.14076 10.6925 5.64044C11.1922 6.14012 11.518 6.78727 11.6216 7.48628C11.7232 8.17156 11.6062 8.87144 11.2871 9.48636C10.968 10.1013 10.4632 10.5999 9.84438 10.9114C9.22557 11.2229 8.5243 11.3313 7.84032 11.2212C7.15635 11.1112 6.52449 10.7882 6.03462 10.2984C5.54476 9.8085 5.22183 9.17664 5.11177 8.49267C5.0017 7.80869 5.11012 7.10742 5.42158 6.48861C5.73305 5.8698 6.2317 5.36495 6.84663 5.04588ZM12.1746 3.65848C11.8985 3.65848 11.6746 3.88234 11.6746 4.15848C11.6746 4.43462 11.8985 4.65848 12.1746 4.65848H12.1813C12.4574 4.65848 12.6813 4.43462 12.6813 4.15848C12.6813 3.88234 12.4574 3.65848 12.1813 3.65848H12.1746Z"
+                      fill="white"
+                    />
+                  </svg>
+                  <span class="sr-only">Instagram account</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <hr class="my-3 border-white sm:mx-auto dark:border-gray-700 lg:my-5" />
+          <div class="sm:flex sm:items-center sm:justify-center">
+            <span class="text-sm text-white sm:text-center dark:text-gray-400">
+              © 2025 All Rights Reserved
+            </span>
+          </div>
+        </div>
+      </footer>
+  </body>
+</html>
